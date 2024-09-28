@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.get('/transcript', async (req, res) => {
     const { link } = req.body;
-    const videoId = new URL(link).searchParams.get('v');
+    const videoId = link;
 
     if (videoId) {
         try {
