@@ -8,6 +8,10 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Resume está ativo!');
+});
+
 app.post('/transcript', async (req, res) => {
     const { link } = req.body;
     const videoId = new URL(link).searchParams.get('v');
