@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     res.send('Resume está ativo!');
 });
 
-app.post('/transcript', async (req, res) => {
+app.get('/transcript', async (req, res) => {
     const { link } = req.body;
     const videoId = new URL(link).searchParams.get('v');
 
