@@ -2,12 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.tsx",
+  "main": "server.ts",
   "engines": {
     "node": "16.x"
   },
   "scripts": {
-    "start": "node server.tsx",
+    "start": "node server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon"
   },
@@ -18,6 +18,7 @@
     "@types/node": "^22.7.4",
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.1.7",
     "save": "^2.9.0",
     "youtube-transcript": "^1.2.1"
