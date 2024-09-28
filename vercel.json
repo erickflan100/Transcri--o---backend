@@ -12,5 +12,5 @@
             "dest": "server.ts"
         }
     ],
-    "regions": ["gru1"]
+    "functionFailoverRegions": ["gru1", "iad1"]
 }
